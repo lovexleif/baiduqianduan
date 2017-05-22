@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script>
+    var m=new Array()
+    m[0]=1
+    m[1]=1
+    for(var i=0;i<24;i++)
+    	if(i==0||i==1){document.write("第"+(i+1)+"个月的兔子："+m[i]+"<br />");}
+        else{
+    	m[i]=m[i-1]+m[i-2]
+       document.write("第"+(i+1)+"个月的兔子："+m[i]+"<br />")
+    }
+    </script>
+    </body>
+</html>

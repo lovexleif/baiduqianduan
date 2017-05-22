@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script>
+    var sum=0;
+    for(var i=101;i<201;i++){
+    	for(var j=2;j<i+1;j++){
+    		if(i%j!=0||i==j){
+    			if(i==j){document.write(i+"&nbsp");sum++;break;}
+    		}
+    		if(i%j==0){break;}
+    		
+    		
+    	}
+    }
+    document.write("统计所有素数个数："+sum);
+    </script>
+    </body>
+</html>
