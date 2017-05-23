@@ -1,0 +1,31 @@
+//git 笔记
+教程原话:
+"git checkout -- file可以丢弃工作区的修改：
+
+$ git checkout -- readme.txt
+就是让这个文件回到最近一次git commit或git add时的状态。"
+
+git reset HEAD
+reset 命令是修改库版本库指向,HEAD指向了最新的版本,同时清空了 add 以后的暂存区.
+reset本来是用来修改版本库指向的,清空缓存区只是reset的一个附加功能.
+
+git rm test.txt
+等于
+
+rm test.txt
+git add test.txt
+--
+
+git checkout -- test.txt
+工作区(已删除test.txt)与add后的缓存区(git add test.txt 所以也删除了test.txt)比较了文件,都是没有test.txt文件,没有差异,提示没有匹配到文件(英文错误提示).
+
+$ git reset HEAD
+指向HEAD 清空了缓存区,但是没有修改工作区
+这时候可以打一下 
+git status
+显示
+delete test.txt
+也就是说之前的rm test.txt 还有效 (git rm test.txt分了两步,保留了第一步操作)
+
+$ git checkout -- test.txt
+工作区没有变(依旧是删除了test.txt) 但是缓存区没了,所以跟就跟HEAD版本库比较了test.txt 并找回了这个test.txt文件.
