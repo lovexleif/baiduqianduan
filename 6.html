@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>6</title>
+</head>
+<body>
+	<script>
+	var m=prompt("请输入第一个数","200");
+	var n=prompt("请输入第二个数","100");
+	var x=0;//大数换小数，
+	var a=0//最大公约数
+	if(n>m){x=m;m=n;n=x;}
+	for(var k=2;k<m+1;k++){
+		if(m%k==0){
+			if(n%k==0){
+				a=k;
+			}
+		}
+	}
+	if(a==0){document.write("这两个数之间没有公约数")}
+		else{document.write("最大公约数为："+a)}
+	</script>
+</body>
+</html>

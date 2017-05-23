@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script>
+    var n=prompt("输入一个数","90");
+    document.write("您输入的数为："+n+"<br />");
+    for(var k=2;k<n+1;k++){
+    	if(k==n){
+    		document.write(n+"是质数");
+            break;
+    	}
+        if(n%k==0){
+            document.write("<br />"+n+"分解质因数为："+n+"=");
+            document.write(k);
+            n=n/k;
+            for(k=2;k<n+1;k++){
+                if(n%k==0){document.write("*"+k);n=n/k;k=2;}
+
+            }
+        }
+
+    }
+    </script>
+    </body>
+</html>
