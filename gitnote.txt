@@ -1,4 +1,7 @@
 //git 笔记
+
+
+
 教程原话:
 "git checkout -- file可以丢弃工作区的修改：
 
