@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script>
+     for(var i=100;i<999;i++)
+     {
+     	var a=i%10
+     	var b=(i-a)/10%10
+     	var c=(i-b*10-a)/100
+     	if(i==a*a*a+b*b*b+c*c*c){
+     		document.write(i+"&nbsp");
+     	}
+     }
+    </script>
+    </body>
+</html>
