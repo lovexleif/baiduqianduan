@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var m=prompt("输入一个不多于五位的正整数","25468");
+	 	if(m>9999){
+	 		document.write("五位数");
+	 	}
+	 	else if(m>999){document.write("四位数");}
+	 	else if(m>99){document.write("三位数");}
+	 	else if(m>9){document.write("二位数");}
+	 	else if(m>0){document.write("一位数");}
+	 	else{document.write("输入不正确");}
+	 	document.write("<br />");
+	</script>
+</body>
+</html>
