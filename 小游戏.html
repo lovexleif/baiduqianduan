@@ -1,0 +1,162 @@
+<!-- 野生小前端
+写个小游戏来玩玩
+
+这是小弟第一次写的小游戏，基于jQ写的，没用面向对象思维去写，可能写得不好，请见谅，亲测是能玩的！！
+
+尾部我附上材料图片提供大家下载
+
+ //博客地址：http://www.cnblogs.com/linxianzuo/p/6052882.html
+
+复制代码 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<title>js练习</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta property="wb:webmaster" content="ff73a1b1dc1d3c2d" />
+<meta property="qc:admins" content="21162256266751016416375" />
+<meta name="baidu-site-verification" content="00Ba64V77BzhXpxs" />
+<meta name="360-site-verification" content="b57c9f7cf9a06ad3cab7306dd4ae4ea4" />
+<meta name="ujianVerification" content="6b6ff258fe95bdc9623f0d2131e989bc" />
+</head>
+<style>
+*{ margin:0; padding:0;}
+.llk{ width:408px; height:300px; margin:50px auto 0px;}
+.llk ul{}
+.llk ul li{width:102px; height:100px; text-align:center; float:left; list-style:none;}
+.llk ul li img{ width:102px; height:100px;}
+p{margin-top: 50px;text-align: center;}
+
+</style>
+
+</head>
+<body>
+    <p>游戏规则：F5刷新，3秒记图，翻转图片配对一样的图</p>
+    <div class="llk">
+        <ul>
+        </ul>
+    </div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+var aSrc = [
+        "images/yigui.png",
+        "images/shafa.png",
+        "images/chuang.png",
+        "images/shuzhuo.png",
+        "images/yizi.png",
+        "images/chugui.png",
+        "images/chuang.png",
+        "images/shafa.png",
+        "images/yigui.png",
+        "images/shuzhuo.png",
+        "images/chugui.png",
+        "images/yizi.png",
+    ];
+    //封装一个随机函数
+function Random(){
+    return Math.random()>0.5?-1:1;
+}
+//封装一个打乱数组并渲染页面函数
+function init(){
+    aSrc=aSrc.sort(Random);
+    var fragment='';
+    for(var i=0;i<aSrc.length;i++){
+        fragment+='<li><img src="'+aSrc[i]+'" data-src="images/fan.png" /></li>'
+    }
+    $('.llk ul').append(fragment);
+
+}
+//开始时图片换成统一src路径函数
+function reversal(){
+    $('.llk ul li img').each(function(){
+        $(this).animate({'width':0},200,'linear',function(){
+            var data_src1=$(this).attr('src');
+            $(this).attr('src','images/fan.png');
+            $(this).animate({'width':'102px'},200);
+            $(this).attr('data-src',data_src1);
+        })
+    })
+}
+//正式开始并条用上面封装好的函数
+$(function(){
+    init();
+    var time=0;
+    var len;
+    //游戏记忆时间的定时器
+    setTimeout(function(){
+        var i=0;
+        var data_src;
+        //计算游戏开始后的时间定时器
+        setInterval(function(){
+            time=time+0.1;
+        },100)
+        reversal();
+        $('.llk ul li img').click(function(){
+            if(!$('.llk ul li img').is(':animated')){
+                //判断是否被翻转，被翻转的图片含有show这个类名
+                if($(this).hasClass('show')){
+                    $(this).animate({'width':'0px'},200,'linear',function(){
+                        $(this).removeClass('show');
+                        $(this).attr('src','images/fan.png');
+                        $(this).animate({'width':'102px'},200);
+                        i=0;
+                        data_src=0;
+                    });
+                }else{
+                    $(this).addClass('show');
+                    if(data_src==$(this).attr('data-src')){
+                        i=0;
+                        $(this).animate({'width':'0px'},200,'linear',function(){
+                            $(this).attr('src',data_src);
+                            $(this).animate({'width':'102px'},200,function(){
+                                $('.show').addClass('ok').unbind('click').removeClass('show');
+                                len=$('.llk ul li .ok').size();
+                                //出现12 ok类名游戏结束
+                                if(len==12){
+                                    if(time<=10){
+                                        alert('你用了'+time.toFixed(2)+'秒完成游戏,超越神的手速和记忆');
+                                    }if(time>10&&time<=20){
+                                        alert('你用了'+time.toFixed(2)+'秒完成游戏，接近神的手速和记忆');
+                                    }if(time<=30&&time>20){
+                                        alert('你用了'+time.toFixed(2)+'秒完成游戏，正常人的手速和记忆');
+                                    }if(time<=40&&time>30){
+                                        alert('你用了'+time.toFixed(2)+'秒完成游戏，残疾人的手速和记忆');
+                                    }if(time>40){
+                                        alert('你用了'+time.toFixed(2)+'秒完成游戏，老人痴呆症，鉴定完毕!');
+                                    }
+                                }
+                            });
+                           
+                        })
+                    }else{
+                        data_src=$(this).attr('data-src');
+                        $(this).animate({'width':'0px'},200,'linear',function(){
+                            $(this).attr('src',data_src);
+                            $(this).animate({'width':'102px'},200,'linear',function(){
+                                i++;
+                                //判断两次翻转是否一致，不一致两个同时移除show类名
+                                if(i==2){
+                                    $('.llk ul li .show').animate({'width':'0px'},200,function(){
+                                        $(this).attr('src','images/fan.png');
+                                        $(this).animate({'width':'102px'},200);
+                                        i=0;
+                                        data_src=0;
+                                        $('.llk ul li .show').removeClass('show');
+                                    })
+                                }
+                            })
+                        })
+                    }
+                }
+            }
+        })
+    },3000)
+})
+</script>
+</html
