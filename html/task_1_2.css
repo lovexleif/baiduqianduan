@@ -1,0 +1,58 @@
+/*
+* @Author: Lenovo
+* @Date:   2017-06-21 15:45:27
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-06-21 16:49:11
+*/
+/* 导航开始 */
+body{
+	margin:0px;
+	padding:0px;
+}
+body div.header{
+	
+	height: 30px;
+	background-color:#000;
+}
+body div img,ul{
+	display: inline-block;
+	margin:0px;
+}
+body div img{
+	float:left;
+}
+body div ul{
+	float: right;
+}
+body div ul li{
+	float:left;
+	list-style-type: none;
+    width:100px;
+    
+}
+body div ul li a{
+	float:left;
+	font:normal 200 10px/10px arial;
+	line-height: 30px;	
+
+}
+body div.header ul li a:link{
+	color:#fff;
+	text-decoration:none;
+}
+body div.header ul li a:visited{
+	color:grey;
+	text-decoration:none;
+} 
+body div.header ul li a:hover{
+	color:grey;
+	text-decoration: underline;
+}
+body div.body{
+	background-color: #DEDEDE;
+}
+
+body div.body .article1,.article2,.picture.lastArticle.tijiao{
+    background-color: #FFFFFF;
+}
+/* 导航结束 */
