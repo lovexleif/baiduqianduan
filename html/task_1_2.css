@@ -1,39 +1,46 @@
 /*
 * @Author: Lenovo
 * @Date:   2017-06-21 15:45:27
-* @Last Modified by:   Lenovo
-* @Last Modified time: 2017-06-21 16:49:11
+* @Last Modified by:   lei xie
+* @Last Modified time: 2017-06-21 22:57:30
 */
 /* 导航开始 */
 body{
 	margin:0px;
 	padding:0px;
+	background-color: #DEDEDE;
+}
+body div.bodyer .huise{
+	color:grey;
 }
 body div.header{
 	
-	height: 30px;
+	height: 45px;
 	background-color:#000;
 }
-body div img,ul{
+body div.header img,ul{
 	display: inline-block;
 	margin:0px;
 }
-body div img{
+body div.header img{
 	float:left;
+	width:160px;
+	height:45px;
 }
-body div ul{
+body div.header ul{
 	float: right;
 }
-body div ul li{
+body div.header ul li{
 	float:left;
 	list-style-type: none;
     width:100px;
+    margin:0px 20px ;
     
 }
 body div ul li a{
 	float:left;
-	font:normal 200 10px/10px arial;
-	line-height: 30px;	
+	font:normal 200 12px/14px arial;
+	line-height: 45px;	
 
 }
 body div.header ul li a:link{
@@ -48,11 +55,79 @@ body div.header ul li a:hover{
 	color:grey;
 	text-decoration: underline;
 }
-body div.body{
+/* 导航结束 */
+
+/* 文章一开始 */
+/* body div.bodyer{
 	background-color: #DEDEDE;
+	padding:0px;
+	margin:0px;
+} */
+body div.bodyer .article1{
+	margin:21px;
+	background-color: #FFF;
+	padding:20px;
+}
+body div.bodyer .article2,.picture,.lastArticle,.tijiao{
+    background-color: #FFFFFF;
+    margin:0px 21px 21px 21px;
+    padding:20px;
+}
+body div.bodyer img{
+	display: block;
+}
+/* 文章一结束 */
+
+/* 文章二开始 */
+body div.bodyer div.article2 ul li{
+	list-style-type: none;
+	font-weight: 600;
+	font-size: 16px;
+	height:26px;
+}
+/* 文章二结束 */
+
+/* picture start */
+body div.bodyer .picture div.picture2{
+    border:1px solid grey ;
+    text-align: center;
+    width: 122px;
+    height: 126px;
+    margin:25px 0px 25px 60px;
+}
+body div.bodyer .picture div.picture2 img{
+	width: 100px;
+	height: 80px;
+}
+/* picture end */
+
+/* lastArticle start */
+table{
+	width:1200px;
+}
+table,th,td{
+	text-align: left;
+	border:1px solid #CDCCD1;
+	
+}
+td,th{
+	padding:3px 7px 2px 7px;
 }
 
-body div.body .article1,.article2,.picture.lastArticle.tijiao{
-    background-color: #FFFFFF;
+body div.bodyer .lastArticle table th{
+    background-color: #333333;
+    color:#ffffff;
 }
-/* 导航结束 */
+body div.bodyer .lastArticle table td.table_width{
+    width:480px;
+    height:24px;
+}
+body div.bodyer .lastArticle table tr.table_2{
+	background-color: #cccccc;
+	font-weight: 600;
+}
+/* lastArticle end */
+/* tijiao start */
+body div.bodyer .tijiao .tijiao1{
+	text-align: center;
+}
