@@ -1,0 +1,35 @@
+/*
+* @Author: lei xie
+* @Date:   2017-06-22 18:27:58
+* @Last Modified by:   lei xie
+* @Last Modified time: 2017-06-22 19:34:53
+*/
+.leftBox,.rightBox,.centerBox{
+	
+	padding:20px;
+	margin:20px;
+	background-color: #fff;
+}
+
+.outsideBox{
+	margin:20px;
+	padding:20px;
+	background-color: #eee;
+	border:1px solid #999;
+	overflow: hidden;
+}
+
+.leftBox{
+	width: 160px;
+	float: left;
+}
+
+
+
+.rightBox{
+	width: 80px;
+	float: right;
+}
+.centerBox{
+	margin:20px 160px 0px 240px;
+}
