@@ -2,7 +2,7 @@
 * @Author: lei xie
 * @Date:   2017-06-22 18:27:58
 * @Last Modified by:   lei xie
-* @Last Modified time: 2017-06-22 19:49:44
+* @Last Modified time: 2017-06-22 20:03:47
 */
 
 
@@ -39,6 +39,7 @@
 */
 
 /* position */
+
 .leftBox,.rightBox,.centerBox{
 	display: inline-block;
 	padding:20px;
@@ -46,6 +47,9 @@
 	background-color: #fff;
 }
 
+img{
+	border: 1px solid #999;
+}
 .outsideBox{
 	margin:20px;
 	padding:20px;
@@ -55,18 +59,21 @@
 }
 
 .leftBox{
-	width: 160px;
+	width: 158px;
 	left: 40px;
+	border: 1px solid #999;
 	position: absolute;
 }
 
 
 
 .rightBox{
-	width: 80px;
+	width: 78px;
 	right: 40px;
+	border: 1px solid #999;
 	position: absolute;
 }
 .centerBox{
 	margin:20px 160px 0px 240px;
+	border: 1px solid #999;
 }
