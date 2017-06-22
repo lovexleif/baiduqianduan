@@ -1,8 +1,8 @@
 /*
 * @Author: Lenovo
 * @Date:   2017-06-21 15:45:27
-* @Last Modified by:   lei xie
-* @Last Modified time: 2017-06-21 22:57:30
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-06-22 12:23:47
 */
 /* 导航开始 */
 body{
@@ -12,6 +12,10 @@ body{
 }
 body div.bodyer .huise{
 	color:grey;
+}
+.zhengwen{
+	text-indent: 35px;
+	line-height: 30px;
 }
 body div.header{
 	
@@ -67,11 +71,13 @@ body div.bodyer .article1{
 	margin:21px;
 	background-color: #FFF;
 	padding:20px;
+	box-shadow:0 0 10px #848484;
 }
 body div.bodyer .article2,.picture,.lastArticle,.tijiao{
     background-color: #FFFFFF;
     margin:0px 21px 21px 21px;
     padding:20px;
+    box-shadow:0 0 10px #848484;
 }
 body div.bodyer img{
 	display: block;
@@ -128,6 +134,41 @@ body div.bodyer .lastArticle table tr.table_2{
 }
 /* lastArticle end */
 /* tijiao start */
-body div.bodyer .tijiao .tijiao1{
+/* body div.bodyer .tijiao .tijiao1{
 	text-align: center;
+} */
+body div.bodyer .tijiao .tijiao1 table,td,tr{
+	border-style: none;
+}
+
+body div.bodyer .tijiao .tijiao1 table tr td:nth-child(2){
+	text-align:right;
+	margin-right:10px;
+}
+body div.bodyer .tijiao .tijiao1 table tr td:nth-child(3){
+	text-align: left;
+}
+body div.bodyer .tijiao .tijiao1 table tr:nth-child(3){
+    height:80px;
+}
+body div.bodyer .tijiao .tijiao1 table tr:nth-child(5){
+	height:60px;
+	line-height: 20px;
+}
+body div.bodyer .tijiao .tijiao1 input[name="submit"]{
+    background-color: #3355D0;
+    color:#fff;
+    font: normal 400 20px/20px 微软雅黑;
+    width:1200px;
+    height:50px;
+    border-radius: 10px;
+}
+/* footer */
+body div.footer{
+	height: 80px;
+	color: #fff;
+	/* line-height: 80px; */
+	text-align: center;
+	font: normal 500 15px/80px 微软雅黑;
+	background-color: #000;
 }
