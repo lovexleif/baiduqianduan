@@ -1,0 +1,210 @@
+/*
+* @Author: Lenovo
+* @Date:   2017-06-21 15:45:27
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-06-23 13:27:17
+*/
+
+/* 导航两列布局
+ */
+.bodyer .tijiao{
+	display: inline-block;
+}
+body div.bodyer{
+	margin: 20px 411px 20px 0px;
+
+} 
+.outsideBox{
+	position: relative;
+	/* overflow: hidden; */
+}
+.tijiao{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+
+
+
+
+
+/* 导航开始 */
+
+
+body{
+	margin:0px;
+	padding:0px;
+	background-color: #DEDEDE;
+}
+body div.bodyer .huise{
+	color:grey;
+}
+.zhengwen{
+	text-indent: 35px;
+	line-height: 30px;
+}
+body div.header{
+	
+	height: 45px;
+	background-color:#000;
+}
+body div.header img,body div.header ul{
+	display: inline-block;
+	margin:0px;
+}
+body div.header img{
+	float:left;
+	width:160px;
+	height:45px;
+}
+body div.header ul{
+	float: right;
+}
+body div.header ul li{
+	float:left;
+	list-style-type: none;
+    width:100px;
+    margin:0px 20px ;
+    
+}
+body div ul li a{
+	float:left;
+	font:normal 200 12px/14px arial;
+	line-height: 45px;	
+
+}
+body div.header ul li a:link{
+	color:#fff;
+	text-decoration:none;
+}
+body div.header ul li a:visited{
+	color:grey;
+	text-decoration:none;
+} 
+body div.header ul li a:hover{
+	color:grey;
+	text-decoration: underline;
+}
+/* 导航结束 */
+
+/* 文章一开始 */
+/* body div.bodyer{
+	background-color: #DEDEDE;
+	padding:0px;
+	margin:0px;
+} */
+body div.bodyer a:link{
+	color: #0942E9;
+}
+body div.bodyer .article1{
+	margin:21px;
+	background-color: #FFF;
+	padding:20px;
+	box-shadow:0 0 10px #848484;
+}
+.article2,.picture,.lastArticle,.tijiao{
+    background-color: #FFFFFF;
+    margin:0px 21px 21px 21px;
+    padding:20px;
+    box-shadow:0 0 10px #848484;
+}
+body div.bodyer img{
+	display: block;
+}
+/* 文章一结束 */
+
+/* 文章二开始 */
+body div.bodyer div.article2 ul li{
+	list-style-type: none;
+	font-weight: 600;
+	font-size: 16px;
+	height:26px;
+}
+/* 文章二结束 */
+
+/* picture start */
+body div.bodyer .picture div.picture2{
+    border:1px solid grey ;
+    text-align: center;
+    width: 122px;
+    height: 126px;
+    margin:25px 0px 25px 60px;
+}
+body div.bodyer .picture div.picture2 img{
+	width: 100px;
+	height: 80px;
+}
+/* picture end */
+
+/* lastArticle start */
+.lastArticle table{
+	width:100%;
+
+}
+.lastArticle table,.lastArticle th,.lastArticle td{
+	text-align: left;
+	border:1px solid #CDCCD1;
+	
+}
+div.lasetArticle td,div.lasetArticle th{
+	padding:3px 7px 2px 7px;
+}
+
+body div.bodyer .lastArticle table th{
+    background-color: #333333;
+    color:#ffffff;
+}
+body div.bodyer .lastArticle table td.table_width{
+    width:40%;
+    height:24px;
+}
+body div.bodyer .lastArticle table tr.table_2{
+	background-color: #cccccc;
+	font-weight: 600;
+}
+/* lastArticle end */
+
+
+/* footer */
+body div.footer{
+	height: 80px;
+	color: #fff;
+	/* line-height: 80px; */
+	text-align: center;
+	font: normal 500 15px/80px 微软雅黑;
+	background-color: #000;
+}
+
+/* tijiao start */
+
+body div.tijiao .tijiao1 table,body div.tijiao .tijiao1 td,body div.tijiao .tijiao1 tr{
+	border-style: none;
+}
+
+body  .tijiao .tijiao1 table tr td:nth-child(2){
+	text-align:right;
+	margin-right:10px;
+}
+body .tijiao .tijiao1 table tr td:nth-child(3){
+	text-align: left;
+}
+body .tijiao .tijiao1 table tr:nth-child(3){
+    height:80px;
+}
+body .tijiao .tijiao1 table tr:nth-child(5){
+	height:60px;
+	line-height: 20px;
+}
+body .tijiao .tijiao1 input[name="submit"]{
+    background-color: #3355D0;
+    color:#fff;
+    font: normal 400 20px/20px 微软雅黑;
+    width:100%;
+    height:50px;
+    border-radius: 10px;
+}
+.tijiao1 h3 span{
+	color:grey;
+	font-weight: bold;
+	font-size: 25px;
+}
