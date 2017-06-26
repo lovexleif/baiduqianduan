@@ -1,0 +1,41 @@
+.outsideBox{
+	width: 892px;
+	height: 1386px;
+	background-color: #fff;
+	background-color: grey; 
+	margin: 0 auto;
+	padding:0 44px;
+}
+/* head start */
+.headBox .ife{
+	width: 110px;
+	height: 61px;
+	font:normal 600 12px/12px  SimHei;
+	color: #ffffff;
+	position: relative;
+	background-color: #D45C5B;
+}
+.headBox .ife span{
+    position: absolute;
+    left:7px;
+    bottom: 6px;
+}
+.headBox .headBoxLine{
+	width: 892px;
+	height: 2px;
+	background-color: #938e8c;
+}
+/* head end */
+
+/* topBox start */
+.topBox{
+	margin: 34px 0px 41px 0px;
+	background: blue;
+}
+.midBox{
+   background-color: green;
+}
+.lastBox{
+	margin:71px 0 37px 0px;
+	background-color: green;
+}
