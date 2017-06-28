@@ -89,27 +89,70 @@
 .topBoxRight .secondNumber .first{
 	font-size: 55px;
 	display: inline-block;
-	/*position: relative;*/
+	position: relative;
 }
 .topBoxRight .secondNumber .second{
 	font-size: 21px;
 	display: inline-block;
 	bottom: 18px;
-	left: 52px;
+	left: 80px;
 	position: absolute;
 }.topBoxRight  .secondNumber .last{
 	font-size: 12px;
 	display: inline-block;
-	/*position: relative;*/
+	position: relative;
+	color: grey;
 }
+/* topBox end */
 
-
-
+/* midBox start */
 
 .midBox{
    background-color: green;
+   width: 641px;
+   font:normal 12px 微软雅黑;
+   color: #231815;
+   line-height: 16px;
 }
+.midBox .midBox_left,.midBox .midBox_mid,.midBox .midBox_right{
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+}
+.midBox .midBox_left{
+	width:40%;
+}
+.midBox .midBox_mid{
+	width:30%;
+}
+.midBox .midBox_right{
+	width:20%;
+}
+
+.midBox .percent{
+	position: relative;
+	left: 0px;
+	bottom: 0px;
+}
+
+/* midBox end */
+
 .lastBox{
 	margin:71px 0 37px 0px;
 	background-color: green;
 }
+/* lastBox start */
+/* lastBox end */
+
+/* footBox start */
+.footBox .footBoxLine{
+	background-color: #938e8c;
+	height: 1px;
+	width: 892px;
+}
+.footBox span{
+    font:normal 12px SimHei;
+    display: inline-block;
+    color: #d45d5c;
+    float: right;
+}
+/* footBox end */
