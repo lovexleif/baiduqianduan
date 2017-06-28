@@ -41,17 +41,45 @@
 	height: 301px;
 }
 .topBox .topBoxRight{
-
+    
     position: absolute;
     right:1px;
 	width: 203px;
 	height: 300px;
 	border-top:2px solid #cc8091;
 }
-
-
-
-
+.topBoxRight .about,.topBoxRight .technologe{
+	display: inline-block;
+	font:normal 17px 微软雅黑;
+	color: #000000;
+	border-bottom:solid 2px #938e8c;
+	margin: 0px 20px 0px 0px;
+}
+.topBoxRight .about span,.topBoxRight .technologe span{
+	font-size: 24px;
+}
+.topBoxRight p{
+	font:normal 12px KaiTi;
+	color: #676767;
+}
+.topBoxRight .bigNumber{
+	font:italic 116px 微软雅黑;
+	color: #75b86b;
+	position: relative;
+	left:-25px;
+}
+.topBoxRight .secondNumber{
+	font-family: 微软雅黑;
+	color: #cc8091;
+}
+.topBoxRight .secondNumber .first{
+	font-size: 55px;
+}
+.topBoxRight .secondNumber .second{
+	font-size: 21px;
+}.topBoxRight  .secondNumber .last{
+	font-size: 12px;
+}
 
 
 
