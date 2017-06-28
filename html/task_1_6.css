@@ -2,7 +2,7 @@
 	width: 892px;
 	height: 1386px;
 	background-color: #fff;
-	background-color: grey; 
+	/* background-color: grey;  */
 	margin: 0 auto;
 	padding:0 44px;
 }
@@ -30,8 +30,32 @@
 /* topBox start */
 .topBox{
 	margin: 34px 0px 41px 0px;
-	background: blue;
+	position: relative;
+	
 }
+.topBox img,.topBox .topBoxRight{
+	display: inline-block;
+}
+.topBox img{
+	width: 641px;
+	height: 301px;
+}
+.topBox .topBoxRight{
+
+    position: absolute;
+    right:1px;
+	width: 203px;
+	height: 300px;
+	border-top:2px solid #cc8091;
+}
+
+
+
+
+
+
+
+
 .midBox{
    background-color: green;
 }
