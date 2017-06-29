@@ -205,6 +205,19 @@ body{
 	font:normal 600 33px simHei;
 	padding-bottom:17px; 
 }
+#qian{
+	font:normal 70px 微软雅黑;
+	color: #f5e327;
+	display: inline-block;
+}
+.leftDownBox p{
+    text-indent: 2em;
+}
+.leftDownBox img{
+	float:right;
+
+	
+}
 /* lastBox end */
 
 /* footBox start */
