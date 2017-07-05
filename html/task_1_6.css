@@ -43,6 +43,23 @@ body{
 	width: 641px;
 	height: 301px;
 }
+#leftMask{
+	float:left;
+	filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5; 
+    opacity: 0.5;
+	background-color:#274e3b;
+}
+#rightMask{
+	float:right;
+	filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5; 
+	background-color:#b57671;
+}
+
 .topBox .topBoxRight{
     
     position: absolute;
